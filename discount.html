@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discounts on age and gendre</title>
+</head>
+<body>
+  
+  
+  <input type="text" name="gendre" id="">
+  
+  <script>
+    
+    
+    let age = 55;
+    let gendre = 'Female';
+    let finalDiscount;
+    
+
+    if (age <= 5) {
+      finalDiscount = 100;
+    }
+        else if (age <= 8) {
+      finalDiscount = 50;
+    }
+    else if (gendre == 'Female' && age >=65 ) {
+      finalDiscount = 70;
+    }
+    else if (gendre == 'Female') {
+      finalDiscount = 50;
+    }
+    else if(age >=65){
+      finalDiscount = 70;
+    }
+    else {
+      finalDiscount = 0;
+    }
+      console.log(`Your got: ${finalDiscount}% Off`);
+
+  </script>
+</body>
+</html>
